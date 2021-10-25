@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+
+{% block body_block %}
+        
+<body >
+    
+    <div class="body">
+        
+         <table>
+         <div class="dhana">
+        
+     
+                <tr>
+                  <th colspan="0">sno</th>
+                  <th colspan="0">country</th>
+                  <th colspan="1">logo</th>
+                  
+                </tr>
+                
+                {% for acc in access_records %}
+                <tr>  
+                  <td>{{ acc.sno }}</td>
+            
+                  <td>{{ acc.country }}</td>
+                  <td>
+                    <img src="../media/{{acc.logo}}" width="70px" height="70px">
+                  </td>
+    
+                </tr>
+                  
+                {% endfor %}
+        
+    
+    {% csrf_token %}
+    </div></table>
+
+        
+        {% endblock %}
+    
+        
+    
+
+    </body>
+            
+</html>

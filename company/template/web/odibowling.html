@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+
+{% block body_block %}
+        
+<body >
+    
+    
+        
+         <table>
+         <div class="dhana">
+        
+     
+                <tr>
+                  <th colspan="0">Name</th>
+                  <th colspan="0">country</th>
+                  <th colspan="1">matches</th>
+                  <th colspan="1">wickets</th>
+                  <th colspan="1">econamy</th>
+                
+                
+                </tr>
+                
+                {% for acc in access_records %}
+                <tr>  
+                  <td>{{ acc.name }}</td>
+            
+                  <td>{{ acc.country }}</td>
+                  <td>{{ acc.matches }}</td>
+                  
+                  <td>{{ acc.wickets }}</td>
+                  <td>{{ acc.econamy }}</td>
+                </tr>
+                  
+                {% endfor %}
+        
+    
+    {% csrf_token %}
+    </div></table>
+
+        
+        {% endblock %}
+    
+        
+    
+
+    </body>
+            
+</html>

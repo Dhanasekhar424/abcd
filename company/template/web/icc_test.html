@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{%load static%}
+<html>
+
+<head>
+    {% block body_block %}
+
+	<meta charset="utf-8">
+	<title>home</title>
+    <link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+    <style>
+        .bat{
+            background-color: aqua;
+            padding: 30px;
+            word-spacing: 330px;
+            width: 100%;
+            
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+    
+            display: inline-block;
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+        .bat a{
+            text-decoration: none;
+            color: red;
+    
+        }
+        .bat a:hover{
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div class="bat">
+            <a href="icc_test_team">TEAMS</a>
+            <a href="icc_testbatting_team">BATTING</a>
+            <a href="icc_testbowling_team">BOWLING</a>
+            <a href="icc_testallrounder_team">ALLROUNDER</a>
+            </div>
+            {% endblock %}  
+
+</body>
+</html>

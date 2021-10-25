@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{%load static%}
+<html>
+
+<head>
+    
+    {% block body_block %}
+	<meta charset="utf-8">
+	<title>home</title>
+    <link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+    <style>
+        .aa{
+            display: inline-block;
+            color: blue;
+            padding: 5px 20px;
+	        border: 1px solid black;
+            text-decoration: none;
+
+        }
+        .aa a{
+            text-decoration: none;
+
+        }
+        .aa:hover{
+	        background-color: lightseagreen;
+	         color: black;
+             text-decoration: none;
+
+        }
+    </style>
+    
+</head>
+<body>
+    
+    
+    <img src="{% static 'images/css/download.png' %}" style="height: 60px; width: 60px;" > <br>
+    <div class="aa">
+    <a href="india">India</a></div><br><br>
+    <img src="{% static 'images/css/australia.jpg' %}" style="height: 60px; width: 60px;" ><br>
+    <div class="aa">
+    <a href="australia">Australia</a></div><br><br>
+    <img src="{% static 'images/css/sa.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="southafrica">South Africa</a></div><br><br>
+    <img src="{% static 'images/css/sa.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="westindies">West Indies</a></div><br><br>
+    <img src="{% static 'images/css/england.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="england">England</a></div><br><br>
+    <img src="{% static 'images/css/newzland.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="newzland">Newzland</a></div><br><br>
+    <img src="{% static 'images/css/srilanka.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="srilanka">Srilanka</a></div><br><br>
+    <img src="{% static 'images/css/irland.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="irland">Irland</a></div><br><br>
+    <img src="{% static 'images/css/pak.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="pak">Pakistan</a></div><br><br>
+    <img src="{% static 'images/css/bang.png' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="bangaladesh">Bangladesh</a></div><br><br>
+    <img src="{% static 'images/css/afg.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="afgan">Afghanistan</a></div><br><br>
+    <img src="{% static 'images/css/zimbawe.jpg' %}" style="height: 50px; width: 50px;" ><br>
+    <div class="aa">
+    <a href="zimbawe">Zimbawe</a></div><br><br>
+    
+       
+    {% endblock %}  
+            
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{%load static%}
+<html>
+
+<head>
+    {% block body_block %}
+
+	<meta charset="utf-8">
+	<title>home</title>
+    <link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+    <style>
+        .bat{
+            background-color: aqua;
+            padding: 30px;
+            word-spacing: 340px;
+            
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+    
+            display: inline-block;
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+        .bat a{
+            text-decoration: none;
+            color: red;
+    
+        }
+        .bat a:hover{
+            color: lime;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div class="bat">
+            <a href="test">TESTRUNS</a>
+            <a href="odi">ODIRUNS</a>
+            <a href="twinty">T20</a>
+            </div>
+            {% endblock %}  
+ 
+</body>
+</html>

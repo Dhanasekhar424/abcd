@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends "web/all.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+
+{% block body_block %}
+        
+<body >
+    
+    <div class="body">
+        
+         <table>
+         <div class="dhana">
+        
+     
+                <tr>
+                  <th colspan="0">rank</th>
+        
+                  <th colspan="1">country</th>
+                  <th colspan="1">points</th>
+                  
+                </tr>
+                
+                {% for acc in access_records %}
+                <tr>  
+                  <td>{{ acc.rank }}</td>
+                  <td>{{ acc.country }}</td>
+                  <td>{{ acc.points }}</td>
+                  
+                </tr>
+                  
+                {% endfor %}
+        
+    
+    {% csrf_token %}
+    </div></table>
+
+        
+        {% endblock %}
+    
+        
+    
+
+    </body>
+            
+</html>

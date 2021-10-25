@@ -1,0 +1,116 @@
+.first
+{
+  font-size: x-large;
+  font-style: oblique;
+  color: white;
+  background-color: orange;
+  height: 50px;
+  text-align:left ;
+  padding: 10px 0px 0px 20px;
+
+}
+.social
+{
+  font-size: x-large;
+  font-style: oblique;
+  color: white;
+  background-color: orange;
+  height: 100px;
+  text-align:right ;
+  padding: 0px 0px 0px 20px;
+  word-spacing: 10px;
+
+}
+
+ul{
+	float: left;
+  list-style-type: none;
+  margin-top: 30px;
+  height: 10px;
+
+
+}
+ul li{
+	display: inline-block;
+
+
+}
+ul li a{
+	text-decoration: none;
+  color:black;
+	padding: 15px 40px;
+
+	
+}
+ul li a:hover{
+  
+  color:greenyellow;
+
+
+}
+.center{
+  margin-top: 0px;
+  padding: 50px 0px 0px 0px;
+
+}
+.ground
+{
+  float: left;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+}
+
+table,td{
+  border: 1px solid green;
+  background-color: aliceblue;
+  word-spacing: 10px;
+  padding: 10px 30px 10px 30px;
+  color: black;
+}
+th{
+background-color: brown;
+}
+.d{
+  background-color: turquoise;
+word-spacing: 5px;
+font-size: 16px;
+
+}
+input[type=text]{
+  width: 55%;
+  padding: 7px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type=email]{
+  width: 55%;
+  padding: 7px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+input[type=body]{
+  width: 55%;
+  padding: 7px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+input[type=submit] {
+  width: 55%;
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 20px;
+
+  margin-left: 70px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}

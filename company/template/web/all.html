@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'images/css/style.css' %}">
+
+
+
+</head>
+
+<body>
+    
+
+<div class="navbar">
+    <div class="first">
+        Top most sports in world<br>
+        <a href="tel:+917093798914">7093798914</a>
+    </div>
+
+    <div class="social">
+        
+        <a href="https://mobile.twitter.com/ddhanasekharre1"><i class="fa fa-twitter" style="color: blue; font-size: 22px;"></i></a>
+        <a href="https://www.facebook.com/dhana.sekhar.22831"><i class="fa fa-facebook" style="color:blue; font-size: 22px;"></i></a>
+        <i class="fa fa-youtube" style="color: red; font-size: 22px;"></i>
+        <a href="https://www.instagram.com/dhanasekhar_r"><i class="fa fa-instagram" style="color:red; font-size: 22px;"></i></a>
+        <i class="fa fa-github" style="color:white; font-size: 22px;"></i>
+        <i class="fa fa-whatsapp" style="color:green; font-size: 22px;"></i>
+    
+
+    
+        <ul>
+            <li><a href="rupesh">Home</a></li>
+            <li><a href="Teams">Teams</a></li>
+            <li><a href="players">Players</a></li>
+            <li><a href="Rankings">Rankings</a></li>
+            <li><a href="Stats">Stats</a></li>
+            <li><a href="Records">Records</a></li>
+            <li><a href="IPL">About Cricket</a></li>
+        </ul></div>
+        </div><br>
+        <div>
+            {% block body_block %}
+            
+            {% endblock %}
+            </div>
+</body>
+</html>
+
